@@ -5,19 +5,24 @@ description: >
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "/"
+baseurl: ""
 url: "http://labkomfisikaunpad.github.io"
 fixedNav: 'true' # true or false
-theme: blue # purple green, blue, orange, purple, grey
+theme: brown # purple green, blue, brown, purple, grey
 twitterUsername:
 githubUsername: labkomfisikaunpad
 dribbbleUsername:
 codepenUsername:
 
 # Build settings
-permalink: /:year/:month/:title
+permalink: /:year/:month/:title/
 markdown: kramdown
+highlighter: rouge
 include: [_pages]
-exclude: [_site, CHANGELOG.md, LICENSE, README.md]
+exclude: [_site,"Gemfile",
+          "Gemfile.lock",
+          "gulpfile.js",
+          "node_modules",]
 sass:
-  style: compressed
+    sass_dir: assets/_sass
+    style: compressed

@@ -1,0 +1,39 @@
+// ---
+// Only the main Sass file needs front matter (the dashes are enough)
+// ---
+@charset "utf-8";
+
+// Helpers
+@import
+  'assets/_sass/helpers/variables',
+  'assets/_sass/helpers/mixins';
+
+// Base
+@import
+  'assets/_sass/base/reset';
+
+// Utilities
+@import
+  'assets/_sass/utilities/layout';
+
+// Components
+@import
+  'assets/_sass/components/header',
+  'assets/_sass/components/navigation',
+  'assets/_sass/components/article',
+  'assets/_sass/components/archives',
+  'assets/_sass/components/social',
+  'assets/_sass/components/buttons',
+  'assets/_sass/components/footer';
+
+// Themes
+@import
+  'assets/_sass/themes/blue',
+  'assets/_sass/themes/green',
+  'assets/_sass/themes/grey',
+  'assets/_sass/themes/brown',
+  'assets/_sass/themes/purple';
+
+// Vendor
+@import
+  'assets/_sass/vendor/syntax-highlighting';
